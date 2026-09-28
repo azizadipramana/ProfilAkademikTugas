@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@source '../views/**/*.blade.php';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@theme {
+    --font-sans: 'Plus Jakarta Sans', 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    --color-its-blue: #013880;
+    --color-its-darkblue: #00224d;
+    --color-its-gold: #ffc107;
+    --color-its-cyan: #00b4d8;
+}
+
+@layer utilities {
+    .bg-grid-pattern {
+        background-image: radial-gradient(rgba(1, 56, 128, 0.08) 1px, transparent 1px);
+        background-size: 24px 24px;
+    }
+    .bg-grid-pattern-dark {
+        background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+        background-size: 24px 24px;
+    }
+}
